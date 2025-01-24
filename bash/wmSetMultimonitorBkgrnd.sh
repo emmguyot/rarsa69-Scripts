@@ -269,6 +269,7 @@ applyBackground () {
     if [ ! -z "$findGnome" ]; then
 	    gsettings set org.gnome.desktop.background picture-options "spanned"
 	    gsettings set org.gnome.desktop.background picture-uri "file://$(readlink -f ${OUTIMG})"
+	    gsettings set org.gnome.desktop.background picture-uri-dark "file://$(readlink -f ${OUTIMG})"
     fi
 }
 
